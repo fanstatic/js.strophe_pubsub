@@ -1,6 +1,7 @@
+import js.strophe
 from fanstatic import Library, Resource
 
 library = Library('strophe.pubsub.js', 'resources')
 
-strophe_pubsub = fanstatic.Resource(
-    library, 'strophe.pubsub.js', depends=[js.strophe])
+strophe_pubsub = Resource(
+    library, 'strophe.pubsub.js', depends=[js.strophe.strophe])
